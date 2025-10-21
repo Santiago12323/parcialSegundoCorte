@@ -1,6 +1,5 @@
-package com.arep.parcial.proxy.controller;
+package com.arep.parcial.proxy.proxy.controller;
 
-import com.arep.parcial.proxy.HttpConnectionExample;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -8,9 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.concurrent.atomic.AtomicInteger;
 
-@RestController
 public class proxyController {
 
     int iterador = 0;

@@ -1,4 +1,4 @@
-package com.arep.parcial.proxy;
+package com.arep.parcial.proxy.proxy.controller;
 
 import org.springframework.stereotype.Service;
 
