@@ -13,7 +13,7 @@ public class proxyController {
 
     int iterador = 0;
 
-    String[] urls = {"http://localhost:8080" , "http://localhost:8080"};
+    String[] urls = {"http://54.197.111.246:8080" , "http://44.223.6.251:8080"};
 
     @Autowired
     HttpConnectionExample httpConnectionExample;
@@ -26,11 +26,13 @@ public class proxyController {
 
             String server = urls[iterador];
 
-            String path = httpServletRequest.getContextPath();
+            String path = httpServletRequest.getRequestURI();
 
             String query = httpServletRequest.getQueryString() != null ? "?" + httpServletRequest.getQueryString() : "";
 
             String url = server + path + query;
+
+            System.out.println(url);
 
             String response = httpConnectionExample.get(url);
 
